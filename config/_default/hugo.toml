@@ -2,6 +2,9 @@ baseURL                = "https://blog.9098067j.ccwu.cc/"
 locale                 = "zh-CN"
 title                  = "我的博客"
 defaultContentLanguage = "zh"
+# 必须设：否则 front matter 里的裸日期按 UTC 解析，date: 2026-09-22 会变成北京时间
+# 当天 08:00，在此之前发布的文章被判为"未来日期"而静默不出现
+timeZone               = "Asia/Shanghai"
 # CJK 语言必须开启，否则 .Summary 和 .WordCount 统计不准
 hasCJKLanguage         = true
 theme                  = "hugo-theme-stack"
