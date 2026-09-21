@@ -1,0 +1,14 @@
+baseURL                = "https://blog.9098067j.ccwu.cc/"
+locale                 = "zh-CN"
+title                  = "我的博客"
+defaultContentLanguage = "zh"
+# CJK 语言必须开启，否则 .Summary 和 .WordCount 统计不准
+hasCJKLanguage         = true
+theme                  = "hugo-theme-stack"
+
+[pagination]
+    pagerSize = 10
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
